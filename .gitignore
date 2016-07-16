@@ -1,0 +1,15 @@
+# Local configuration
+.reviewboardrc
+
+# Editor temp and config files
+*.py~
+*.html~
+*.css~
+*.json~
+*swp
+.project
+.pydevproject
+.settings
+*.nja
+.idea
+*.iml
