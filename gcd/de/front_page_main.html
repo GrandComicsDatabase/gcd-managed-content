@@ -1,0 +1,60 @@
+{% comment %}
+#############################################################################
+
+Put a <p> on its own line before each paragraph of content.
+The browser automatically closes <p> tags, which makes them safer to use
+since you can't accidentally throw off the rest of the layout.  You can
+close them with </p> but it is not required.
+
+Use the class attribute to make announcements (which will appear in an
+inviting color) or call attention to something (a warning color).
+
+<p>
+This will not have a background color.
+<p class="announcment">
+This will be a nice color like pale green or maybe light blue.
+<p class="attention">
+This will have something like a yellow color.
+
+If you need to use multiple paragraphs for an announcement or attention,
+instead of putting the class on the <p> tags, wrap all of the paragraphs
+between a <div> and </div>, each on their own line before and after the
+group of paragraphs.  Indent all content within the div tags to make it
+clear that you are inside of a tag that requires an explict closing
+tag.  Omitting the close </div> will break the page's layout.
+
+Put the class on the opening div tag.
+<div class="announcement">
+  <p>
+  First paragraph of announcement.
+  <p>
+  Second paragraph of announcement.
+</div>
+
+To show a milestone with a cover scan, use a div with the "milestone" class.
+Put the image tag first, then an <h3>Header Tag</h3> with the milestone
+title, then as many <p> paragraphs as you'd like.  Again, indent
+everything within the <div>s to make sure you can tell that you closed
+the div.  The <img /> tag closes itself (that's why it has that extra /
+at the end).  You do not need to set the image width or do anything
+to get it to sit to the left of the text.
+
+<div class="milestone">
+  <img src="/path/to/the/cover/img.jpg" alt="Cover Image" />
+  <h3>We did 1,000,000,000 things!</h3>
+  <p>
+  This is some text about the things that we did.
+  <p>
+  And a bit more text.
+</div>
+
+You can put as many of these as you want on a page.  Always close
+the first milestone div before opening the next one.  This will cause
+them to stack nicely with the other content.
+
+#############################################################################
+{% endcomment %}
+
+<p>
+Dieser Inhalt wird durch Templatesadmin verwaltet.
+</p>
