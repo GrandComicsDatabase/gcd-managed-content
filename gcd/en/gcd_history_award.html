@@ -1,0 +1,42 @@
+{% comment %}
+#############################################################################
+
+Prefer <p> instead of <div> for paragraphs of content.  Web browsers will
+automatically close <p> tags, making them less likely to break layout.
+
+Remember to close all list tags, including nested list.  You need a
+close tag for each open tag.  Indent contents inside of tags to make
+it easy to spot unclosed tags.
+
+Use the class attribute to make announcements (which will appear in an
+inviting color) or call attention to something (a warning color).
+
+<p>
+This will not have a background color.
+<p class="announcment">
+This will be a nice color like pale green or maybe light blue.
+<p class="attention">
+This will have something like a yellow color.
+
+If you need to use multiple paragraphs for an announcement or attention,
+instead of putting the class on the <p> tags, wrap all of the paragraphs
+between a <div> and </div>, each on their own line before and after the
+group of paragraphs.  Indent all content within the div tags to make it
+clear that you are inside of a tag that requires an explict closing
+tag.  Omitting the close </div> will break the page's layout.
+
+Put the class on the opening div tag.
+<div class="announcement">
+  <p>
+  First paragraph of announcement.
+  <p>
+  Second paragraph of announcement.
+</div>
+
+#############################################################################
+{% endcomment %}
+<h2> Grand Comics Database Comics History Awards </h2>
+
+<p>
+Placeholder content.  This area managed by templatesadmin.
+</p>
