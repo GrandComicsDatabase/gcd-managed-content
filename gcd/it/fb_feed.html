@@ -1,0 +1,15 @@
+{% load feedutil %}
+
+{% comment %}
+You can edit the code below to change the feed title, or to comment out
+the feed entirely.  It should not otherwise be changed unless you really
+know what you are doing.
+
+Any additional content should go in other templates, either "front_page_main"
+for above the feed or "front_page_lower" for below it.
+{% endcomment %}
+
+<hr class="feed-post">
+<h2>GCD Comics Timeline</h2>
+<hr class="feed-post">
+{% feed "http://www.facebook.com/feeds/page.php?format=rss20&id=136512123051365" 10 %}
