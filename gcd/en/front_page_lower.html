@@ -2,25 +2,56 @@
 See the front_page_main.html template for HTML usage advice.
 {% endcomment %}
 
-<div id="how_to_help" class="instructions">
+<div>
 
-  <h3>How to Help</h3>
-  <p>
+  <h3 class="label-gcd-blue">Cloudflare</h3>
+  <div class="px-1">
+    We are using Cloudflare as an external service to prevent misbehaving bots overloading our webserver.
+    These measures are preventing excessive use of our site, e.g. due to accessing many pages in a few seconds.  
+    Sometimes we need to turn on enhanced services of Cloudflare, then an interstitial Challenge Page will appear regularly. 
+    <p>
+     Turning off these measures is not an option for us. Our site would be regularly unresponsive due to the bots 
+      (which are often AI-related bots).
+    </p>
+    <p>
+     If you are getting blocked, this is almost always temporarily for a few minutes. If this persists,
+    these are recommendations one can find for those who have issues with Cloudflare:
+    </p>
+    <ul class="list-disc ps-6">
+      <li> Make sure your browsers are up to date, or try a different browser.
+      </li>
+
+      <li>Disable any browser extensions (at least for our website) that may interfere (e.g., ad blockers, privacy extensions).
+      Since we don't serve ads any more, these extension don't have an effect on our site anyway.
+      </li> 
+
+      <li>Try accessing the website using a different device or network to see if the issue persists. 
+      </li>
+      <li>Avoid opening many pages into different tabs in quick succession.
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="how_to_contribute">
+
+  <h3 class="label-gcd-blue">How to Contribute</h3>
+  <p class="ps-1">
   There are several ways in which you can help us to improve our site
   and its content.
   </p>
-  <ul>
+  <ul class="list-disc ps-6">
     <li>
       You can provide missing data, update existing data, or upload
       cover scans.
-      Just <a href="/accounts/register/">register an account</a>
+      Just <a class="link-no-visited" href="/accounts/register/">register an account</a>
       with us, and you can start
-      <a href="http://docs.comics.org/wiki/How_To_Contribute_FAQ">contributing</a>.
+      <a class="link-no-visited" href="http://docs.comics.org/wiki/How_To_Contribute_FAQ">contributing</a>.
     </li>
     <li>
       <a href="/donate/">Donate</a> for our ongoing costs, e.g. the server
       infrastructure. We are a non-profit organization and
-      any funds will be used f or our goal of documenting and indexing
+      any funds will be used for our goal of documenting and indexing
       all comics.
     </li>
     <li>
@@ -29,8 +60,8 @@ See the front_page_main.html template for HTML usage advice.
       or visit our
       <a href="http://docs.comics.org/wiki/Main_Page#Technical_Details">technical documentation</a>
       if you can help with any of these roles:
-      <ul>
-        <li>Web designer / front-end developer (HTML / CSS / JavaScript)</li>
+      <ul class="list-disc ps-6">
+        <li>Web designer / front-end developer (HTML / CSS / Tailwind / JavaScript)</li>
         <li>Python / Django programming</li>
         <li>ElasticSearch search server</li>
         <li>Web Services API</li>
@@ -39,4 +70,18 @@ See the front_page_main.html template for HTML usage advice.
     </li>
   </ul> <!-- outer list -->
 
+<h3 class="label-gcd-blue">Volunteers Wanted For Adding New Comics</h3>
+  <div class='ps-1'>
+    <p class="mb-2">
+Each week, a small number of GCD volunteers add listings to our database for the new comics released that week in North America.
+These are just the basic listings, not full indexes.
+This makes it easier for other volunteers who upload covers and for indexers, as well as for people using <a class="no_visited" href="https://my.comics.org">my.comics.org</a>.
+    </p>
+    <p class="mb-2">
+Each volunteer covers one publisher or a small group of publishers ("D publishers except DC", for example).
+From public sources such as ComicsList and Diamond Previews online, they add the issues and make note of the prices and a few other details.
+We are looking for additional volunteers for this weekly task.
+    </p>
+Follow <a class="no_visited" href="https://docs.comics.org/wiki/New_Releases_Skeletons">this link</a> for a description of the process and a list of which publishers are currently covered.
+  </div>
 </div> <!-- how_to_help -->

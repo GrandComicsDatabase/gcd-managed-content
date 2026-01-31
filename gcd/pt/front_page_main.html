@@ -1,30 +1,24 @@
 {% comment %}
 #############################################################################
-
 Prefer <p> instead of <div> for paragraphs of content.  Web browsers will
 automatically close <p> tags, making them less likely to break layout.
-
 Remember to close all list tags, including nested list.  You need a
 close tag for each open tag.  Indent contents inside of tags to make
 it easy to spot unclosed tags.
-
 Use the class attribute to make announcements (which will appear in an
 inviting color) or call attention to something (a warning color).
-
 <p>
 This will not have a background color.
 <p class="announcment">
 This will be a nice color like pale green or maybe light blue.
 <p class="attention">
 This will have something like a yellow color.
-
 If you need to use multiple paragraphs for an announcement or attention,
 instead of putting the class on the <p> tags, wrap all of the paragraphs
 between a <div> and </div>, each on their own line before and after the
 group of paragraphs.  Indent all content within the div tags to make it
 clear that you are inside of a tag that requires an explict closing
 tag.  Omitting the close </div> will break the page's layout.
-
 Put the class on the opening div tag.
 <div class="announcement">
   <p>
@@ -32,7 +26,6 @@ Put the class on the opening div tag.
   <p>
   Second paragraph of announcement.
 </div>
-
 To show a milestone with a cover scan, use a div with the "milestone" class.
 Put the image tag first, then an <h3>Header Tag</h3> with the milestone
 title, then as many <p> paragraphs as you'd like.  Again, indent
@@ -40,7 +33,6 @@ everything within the <div>s to make sure you can tell that you closed
 the div.  The <img /> tag closes itself (that's why it has that extra /
 at the end).  You do not need to set the image width or do anything
 to get it to sit to the left of the text.
-
 <div class="milestone">
   <img src="/path/to/the/cover/img.jpg" alt="Cover Image" />
   <h3>We did 1,000,000,000 things!</h3>
@@ -49,14 +41,62 @@ to get it to sit to the left of the text.
   <p>
   And a bit more text.
 </div>
-
 You can put as many of these as you want on a page.  Always close
 the first milestone div before opening the next one.  This will cause
 them to stack nicely with the other content.
-
 #############################################################################
 {% endcomment %}
 
+{% comment %}
+<div class="flex flex-col sm:w-1/3 gap-4 mb-2 md:me-2 2xl:me-4">
+  <div class="shadow-md p-2">
+  <h3 class="label-gcd-blue -mx-2 mb-1">Uploading Milestone!</h3>
+  </div>
+</div>
+{% endcomment %}
+
+{% comment %}
+<hr>
+    <div style='padding: 0em 0.3em 0em 0.3em;'>
+<h2>Novidades no site!</h2>
 <p>
-Detta innehåll hanteras genom templatesadmin.
+ Criamos algumas novas funcionalidades para o site recentemente. 
+ Muitas delas utilizam os nossos dados em "link", por exemplo criador, protagonista e personagem, para os quais a migração é um projeto em andamento. 
+ Em média, conseguimos migrar quase metade dos nossos dados do formato "texto" para "link".
 </p>
+<p>Por exemplo, temos listas de capas para
+  <ul>
+    <li>  <a href="https://www.comics.org/cover_checklist/18399/">criadores (p.ex. Kaare Andrews)</a></li>
+    <li>  <a href="https://www.comics.org/feature/1215/covers/">features (p.ex. Star Wars)</a> and</li> 
+    <li>  <a href="https://www.comics.org/character/7586/covers/">characters (p.ex. The Shadow)</a>.</li>
+  </ul>
+  <p>
+    Para criadores, já tínhamos há algum tempo listas dos seus trabalhos por histórias, edições, séries ou protagonistas. Recentemente, criamos listas para 
+    <a href="https://www.comics.org/creator/4842/creators/?sort=-credits_count">cocriadores (p.ex. George Pérez)</a>. 
+  Também conseguimos mostrar para <a href="https://www.comics.org/feature/1156/creators/?sort=-credits_count">protagonistas (p.ex. Iron Man)</a> os criadores,
+assim como para os <a href="https://www.comics.org/character/246/creators/?sort=-credits_count">personagens (p.ex. Wolverine)</a>.  
+</p>
+<p>  
+  Recentemente, criamos outros tipos de listas, como por exemplo uma que mostra as edições com suas capas e principal história (com mais páginas). Ela pode ser usada para
+  <ul>
+    <li><a href="https://www.comics.org/series/41402/overview/">séries (p.ex. Superamigos)</a> or</li>
+    <li><a href="https://www.comics.org/publisher/4738/monthly_covers_on_sale/year/1986/month/1/">editoras (p.ex. Editora Abril).</a></li>
+  </ul>
+  Estas listas de edições com as capas e histórias mais longas podem também ser usadas para as listas de lançamentos mensais e semanais.
+      
+</p>
+  Para navegação, adicionamos em muitas das páginas de listas uma filtragem adicional por país, idioma ou editor.
+  Assim, você pode ver facilmente quais edições em português registramos para o <a href="https://www.comics.org/checklist/2/?country=&language=90&publisher=&sort=issue">Jack Kirby</a>.
+  
+      <p>
+   		Para todas essas listas, é claro, mais dados precisam ainda ser inseridos ou migrados das entradas em texto para registros em link.
+
+        Se você já pensou em ajudar com o conteúdo do banco de dados, agora é uma boa hora. </p>
+</div>
+  <hr>
+</div>
+  <p></p>
+<h3>Procura-se voluntários para adicionar novos quadrinhos</h3>
+<p>
+Precisamos de alguém que possa acompanhar os lançamentos mensais e/ou semanais nos países lusófonos.</p>
+{% endcomment %}

@@ -1,30 +1,24 @@
 {% comment %}
 #############################################################################
-
 Prefer <p> instead of <div> for paragraphs of content.  Web browsers will
 automatically close <p> tags, making them less likely to break layout.
-
 Remember to close all list tags, including nested list.  You need a
 close tag for each open tag.  Indent contents inside of tags to make
 it easy to spot unclosed tags.
-
 Use the class attribute to make announcements (which will appear in an
 inviting color) or call attention to something (a warning color).
-
 <p>
 This will not have a background color.
 <p class="announcment">
-This will be a nice color like pale green or maybe light blue.
+This will be a nice color like pahttps://my.comics.org/feature/34/issues/le green or maybe light blue.
 <p class="attention">
 This will have something like a yellow color.
-
 If you need to use multiple paragraphs for an announcement or attention,
 instead of putting the class on the <p> tags, wrap all of the paragraphs
 between a <div> and </div>, each on their own line before and after the
 group of paragraphs.  Indent all content within the div tags to make it
 clear that you are inside of a tag that requires an explict closing
 tag.  Omitting the close </div> will break the page's layout.
-
 Put the class on the opening div tag.
 <div class="announcement">
   <p>
@@ -32,7 +26,6 @@ Put the class on the opening div tag.
   <p>
   Second paragraph of announcement.
 </div>
-
 To show a milestone with a cover scan, use a div with the "milestone" class.
 Put the image tag first, then an <h3>Header Tag</h3> with the milestone
 title, then as many <p> paragraphs as you'd like.  Again, indent
@@ -40,7 +33,6 @@ everything within the <div>s to make sure you can tell that you closed
 the div.  The <img /> tag closes itself (that's why it has that extra /
 at the end).  You do not need to set the image width or do anything
 to get it to sit to the left of the text.
-
 <div class="milestone">
   <img src="/path/to/the/cover/img.jpg" alt="Cover Image" />
   <h3>We did 1,000,000,000 things!</h3>
@@ -49,14 +41,187 @@ to get it to sit to the left of the text.
   <p>
   And a bit more text.
 </div>
-
 You can put as many of these as you want on a page.  Always close
 the first milestone div before opening the next one.  This will cause
 them to stack nicely with the other content.
-
 #############################################################################
 {% endcomment %}
 
+{% comment %}
+  <div style='border-style: solid'>
+  <div style='padding: 0em 0.3em 0em 0.3em;'>
+	<p>
+  The Grand Comics Database is sad to announce the passing of longtime contributor Lou Mougin. 
+	</p>  
+ <p>
+Lou Mougin (1954-2022)  Prolific indexer for the GCD, he got his start
+working on indexes sold by Marvel and DC, as well as numerous articles
+on gold and silver age comics.   He continued to index comics for the
+GCD while he wrote comics professionally.  
+    </p>   
+<p>  He contributed to <a href="https://www.comics.org/search/advanced/process/?ind_pub_notes=&rating=&pages_uncertain=&letters=&characters=&brand_group=&series=&binding=&indicia_frequency=&issue_notes=&synopsis=&colors=&keywords=&first_line=&tracking_notes=&job_number=&issues=&issue_date=&issue_reprinted=&dimensions=&title=&is_comics=&feature=&indexer=37&indicia_publisher=&pub_name=&is_indexed=&notes=&reprint_notes=&method=icontains&pub_notes=&in_selected_collection=on&inks=&issue_title=&end_date=&variant_name=&series_notes=&price=&barcode=&paper_stock=&volume=&brand_emblem=&pages=&isbn=&issue_pages=&order2=date&order3=&color=&order1=series&pencils=&target=issue&publishing_format=&story_editing=&brand_notes=&is_surrogate=&issue_count=&issue_pages_uncertain=&start_date=&script=&updated_since=&issue_editing=&logic=False&is_variant=&series_year_began=&story_reprinted=&page=1">thousands of issues at the GCD</a>, 
+    </p>   
 <p>
-Placeholder content.  This area managed by templatesadmin.
+Rest in peace.
+  
+    </p>
+    <p>
+      
+    <a href="https://www.newsfromme.com/2023/01/01/lou-mougin-r-i-p/">Mark Evanier's obit of Lou Mougin.</a>
+    </p>
+  </div>
+</div>
+{% endcomment %}
+{% comment %}
+<div class="milestone">
+<h3>Uploading Milestone!</h3>
+  <img src="https://files1.comics.org//img/gcd/covers_by_id/1595/w400/1595322.jpg?-4065633593912623819" alt="Cover Image" />
+  <h3>We reached 1,111,111 cover scans !</h3>
+  <p>
+  We reached 1,111,111 comic covers. The milestone issue was the Peach Momoko Chibi Variant from the just published <a href="https://www.comics.org/issue/2467483/">
+    Tiger Division #1
+</a> from Marvel.
+  </p>
+</div>
+{% endcomment %}
+
+<div class="flex flex-col sm:w-1/3 gap-4 mb-2 md:me-2 2xl:me-4">
+  
+  <div class="shadow-md p-2">
+  <h3 class="label-gcd-blue -mx-2 mb-1">Uploading Milestone!</h3>
+  <img src="https://files1.comics.org//img/gcd/covers_by_id/1810/w200/1810308.jpg" alt="Cover Image" />
+  <h3>We reached 1,325,000 comic covers !</h3>
+  <p>
+  The milestone cover was the cover by Mathieu Lampron for the issue 
+  <a href="https://www.comics.org/issue/1874213/">
+     Le démon du hockey 
+  </a> published by Glénat Québec.
+  </p>
+  </div>
+  
+  <div class="shadow-md p-2">
+	<h3 class="label-gcd-blue -mx-2">Multiple Brand Emblems per Issue</h3>
+
+	<p class="pb-2">
+      We changed our handling of brand emblems for an issue. One now can select more than one brand emblem. 
+      There will be cleanup of the existing combined brand emblems needed.<br>
+      We also updated the list per brand emblem and its usages.
+    </p>
+  </div>
+      
+  <div class="shadow-md p-2">
+	<h3 class="label-gcd-blue -mx-2">Story Arcs and Reading Orders</h3>
+
+	<p class="pb-2">
+      We recently added story arcs to our database. This is to group stories associated by some sort of title, 
+      which includes traditional story arcs, crossovers and events, whether identified by 
+      story titles, trade dress or other emblems. Will take some to populate the database, and we have not 
+      finally decided what all is considered a story arc. 
+      <a href="https://www.comics.org/story_arc/name/">Click for current list of story arcs.</a>
+	</p>
+	<p class="pb-2">
+      As a form of companion functionality, we added reading orders to our collection subsite 
+      <a href="https://my.comics.org/">my.comics.org</a>. Any registered user can now create individual 
+      reading orders for any purpose. These can be made public for anyone to see, we might add search capabilities 
+      for reading orders at some point.
+    </p>
+  </div>
+
+  <div class="shadow-md p-2">   
+  <h3 class="label-gcd-blue -mx-2 mb-1">Indexing Milestone!</h3>
+  <img class="mt-1" src="https://files1.comics.org//img/gcd/covers_by_id/1783/w200/1783290.jpg" alt="Cover Image" />
+  <h3>We reached 475,000 indexed issues !</h3>
+  <p>
+  The milestone issue was <a href="https://www.comics.org/issue/2757309/">
+    Tex Willer Gigantbok #13 - Den siste opprøreren</a> from Norwegian publisher Egmont.
+  </p>
+  </div>
+
+  <div class="shadow-md p-2">
+<h3 class="label-gcd-blue -mx-2">Updates To The Site! (Q2 2025)</h3>
+
+	<p class="pb-2">
+Besides updating and renovating our page designs, in particular making it useable on small screens, we made a couple of changes on the behaviour of the site.
+	</p>
+
+	<p class="pb-2">
+The result tables and lists are now more consistent throughout the site. On many pages you now fill find these two symbols
+    <svg class="inline border border-gray-400 px-1 py-1 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="m 9 3 h 6 v 2 h -6 z m 0 0"/><path d="m 9 7 h 6 v 2 h -6 z m 0 0"/><path d="m 9 11 h 6 v 2 h -6 z m 0 0"/><path d="m 1 3 h 6 v 2 h -6 z m 0 0"/><path d="m 1 7 h 6 v 2 h -6 z m 0 0"/><path d="m 1 11 h 6 v 2 h -6 z m 0 0"/></g></svg>
+	<svg class="inline border border-gray-400 px-1 py-1 w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m 1.992188 0 c -1.089844 0 -2.0000005 0.910156 -2.0000005 2 v 3 c 0 1.089844 0.9101565 2 2.0000005 2 h 3 c 1.089843 0 2 -0.910156 2 -2 v -3 c 0 -1.089844 -0.910157 -2 -2 -2 z m 8 0 c -1.089844 0 -2 0.910156 -2 2 v 3 c 0 1.089844 0.910156 2 2 2 h 3 c 1.089843 0 2 -0.910156 2 -2 v -3 c 0 -1.089844 -0.910157 -2 -2 -2 z m -8 2 h 3 v 3 h -3 z m 8 0 h 3 v 3 h -3 z m -8 6 c -1.089844 0 -2.0000005 0.910156 -2.0000005 2 v 3 c 0 1.089844 0.9101565 2 2.0000005 2 h 3 c 1.089843 0 2 -0.910156 2 -2 v -3 c 0 -1.089844 -0.910157 -2 -2 -2 z m 8 0 c -1.089844 0 -2 0.910156 -2 2 v 3 c 0 1.089844 0.910156 2 2 2 h 3 c 1.089843 0 2 -0.910156 2 -2 v -3 c 0 -1.089844 -0.910157 -2 -2 -2 z m -8 2 h 3 v 3 h -3 z m 8 0 h 3 v 3 h -3 z m 0 0"/></svg>.
+By clicking on them one can switch with a list view and an image view, e.g. using covers or creator faces.
+	</p>
+
+	<p class="pb-2">
+Filtering of search results or lists is now usually available.
+	</p>
+    
+    <p class="pb-2">
+      To avoid visual information overload in case of many variants or reprints, we show the full list only if their number is below a threshold.
+	Logged-in users can set the thresholds in their profile to allow user-defined display.      
+    </p>
+    <p class="pb-2">
+      The functionality for adding issues to a collection, or editing their collection status, is now accessible on the main site.
+    </p>
+    
+    <p class="pb-2">
+      Most data objects now support markdown in the notes for visual structure. 
+      Notes now also support internal links, these are generated automatically and shown with the object name, e.g.
+ [gcd_link_issue](442), or generally [gcd_link_'object_type'](id) 
+    </p>
+
+    <p class="pb-2">
+      We changed the colors on the series status tables for a more consistent appearance. For issues, we added another layer to indicate that some sequence data is present.
+    </p>
+    
+    <p class="pb-2">
+      Keywords are now generally clickable troughout the site.
+    </p>
+</div>
+
+{% comment %}  
+  <h3>We reached 4,000,000 stories !</h3>
+  <p>
+    The milestone story was a cartoon printed in <a href="https://www.comics.org/issue/2422544/#4063187">The American Legion</a>.
+  </p>
+{% endcomment %}  
+  <div class="shadow-md p-2">
+<h3 class="label-gcd-blue -mx-2">No More Ads!</h3>
+Due to a United States IRS ruling regarding advertising revenue as taxable business income, 
+  we will no longer be displaying paid advertising on the website.  
+  <p>
+    
+  This is good news for all our users, but we are now fully dependent on donations to cover our costs in the future.  
+  </p>
+  If you wish to donate you can simply click <button>
+  <a href="https://www.comics.org/donate/">donate</a>
+  </button>, where for US donors this is tax deductable. Thank you for your use and support.  
+  </div>
+</div>
+{% comment %}
+<div style='padding: 0em 0.3em 0em 0.3em;'>
+<h2>Cloudflare Verification</h2>
+
+<p>
+We sometimes need to turn on enhanced services of Cloudflare to prevent misbehaving users and bots to overload our webserver. 
+This service by Cloudflare is used by many, many websites for this purpose. 
 </p>
+
+<p>
+These are recommendations one can find for those who have issues with Cloudflare:
+</p>
+
+<ol>
+<li> Make sure your browsers are up to date, or try a different browser.
+</li>
+  
+<li>Disable any browser extensions (at least for the specific website) that may interfere with the captcha (e.g., ad blockers, privacy extensions).
+Since we don't serve ads anymore, these extension don't have an effect on our site anyway.
+</li> 
+  
+<li>Try accessing the website using a different device or network to see if the issue persists. 
+</li>
+</ol>
+As an all-volunteer organisation we cannot react to individual access problems due to the Cloudflare verification to our free website. 
+It has nothing to do with our setup in any case.
+</div>
+{% endcomment %}
